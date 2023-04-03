@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrolllview"
+    tools:context=".OfficialActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!-- <ImageView
+            android:id="@+id/icfull"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgfull"
+            app:layout_constraintEnd_toEndOf="@+id/imgfull"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/imgfull"
+            app:layout_constraintTop_toTopOf="@+id/imgfull"
+            app:layout_constraintVertical_bias="0.985"
+            app:srcCompat="@drawable/dem_logo" />-->
+
+        <ImageButton
+            android:id="@+id/icfb"
+            android:layout_width="52dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/forfacebook"
+            android:onClick="clickFacebook"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/txtwebsite"
+            app:layout_constraintTop_toBottomOf="@+id/txtwebsite"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageButton
+            android:id="@+id/ictube"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/foryoutube"
+            android:onClick="youTubeClicked"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/icfb"
+            app:layout_constraintTop_toBottomOf="@+id/txtwebsite"
+            app:srcCompat="@drawable/youtube" />
+
+        <ImageButton
+            android:id="@+id/ictwitter"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/fortwittwer"
+            android:onClick="clickTwitter"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/ictube"
+            app:layout_constraintTop_toBottomOf="@+id/txtwebsite"
+            app:srcCompat="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/imgpeople"
+            android:layout_width="178dp"
+            android:layout_height="222dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
+            android:onClick="onpicclick"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtxparty"
+            app:layout_constraintVertical_bias="0.25"
+            app:srcCompat="@drawable/missing" />
+
+        <ImageView
+            android:id="@+id/icparty"
+            android:layout_width="39dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="110dp"
+            android:onClick="clickpart"
+            android:screenReaderFocusable="false"
+            app:layout_constraintBottom_toBottomOf="@+id/imgpeople"
+            app:layout_constraintEnd_toEndOf="@+id/imgpeople"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="@+id/imgpeople"
+            app:layout_constraintTop_toTopOf="@+id/imgpeople"
+            app:layout_constraintVertical_bias="0.929"
+            app:srcCompat="@drawable/dem_logo" />
+
+        <TextView
+            android:id="@+id/txtwebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+            app:layout_constraintStart_toStartOf="@+id/txtemail"
+            tools:text="http://davis.house.gov/" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/website"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/txtphone"
+            tools:text="davisk@mail.house.gov" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/txtaddress"
+            tools:text="(202)225-5006" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/phone"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/txtlocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#9C27B0"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="233 South Wacker Drive, Chicago,IL 60606" />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="80dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtaddress"
+            app:layout_constraintTop_toBottomOf="@+id/txtlocation"
+            tools:text="Danny K. Davis" />
+
+        <TextView
+            android:id="@+id/txtxparty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imgpeople"
+            app:layout_constraintStart_toStartOf="@+id/imgpeople"
+            app:layout_constraintTop_toTopOf="@+id/guideline2"
+            tools:text="(Democratic Party)" />
+
+        <TextView
+            android:id="@+id/txtoffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/txtname"
+            app:layout_constraintStart_toStartOf="@+id/txtname"
+            app:layout_constraintTop_toBottomOf="@+id/txtname"
+            tools:text="U.S. Represemtative" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="90dp"
+            android:text="@string/address"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/txtaddress"
+            android:layout_width="289dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="24dp"
+            android:onClick="clickMap"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            tools:text="2159 Rayburn House Office Building Washington, DC 20515" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Civil Advocacy</string>
+    <string name="address">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="website">Website:</string>
+    <string name="deniedText">No Data For Location</string>
+    <string name="fortwittwer">forTwittwer</string>
+    <string name="foryoutube">foryoutube</string>
+    <string name="forfacebook">forfacebook</string>
+    <string name="c_2022_christopher_hield">C 2022, FNU ARUN </string>
+    <string name="google_civic_information_api">Google Civic Information API</string>
+    <string name="data_provided_by">Data provided by</string>
+    <string name="version_1_0">version 1.0</string>
+    <string name="nolocation">Location permission was denied - cannot determine address</string>
+</resources>
